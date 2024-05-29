@@ -1,0 +1,267 @@
+
+
+
+
+-- Inserting data into the tables
+
+-- Insert 10 user records into the Users table
+INSERT INTO Users(UserID, UserName, Pass, Email, DateOfBirth) VALUES (100001, 'JohnDoe', 'pass123', 'john.doe@example.com', '1990-01-15');
+INSERT INTO Users(UserID, UserName, Pass, Email, DateOfBirth) VALUES (100002, 'JaneDoe', 'pass124', 'jane.doe@example.com', '1992-05-22');
+INSERT INTO Users(UserID, UserName, Pass, Email, DateOfBirth) VALUES (100003, 'BobSmith', 'pass125', 'bob.smith@example.com', '1988-03-30');
+INSERT INTO Users(UserID, UserName, Pass, Email, DateOfBirth) VALUES (100004, 'AliceJones', 'pass126', 'alice.jones@example.com', '1991-07-19');
+INSERT INTO Users(UserID, UserName, Pass, Email, DateOfBirth) VALUES (100005, 'ChrisLee', 'pass127', 'chris.lee@example.com', '1989-11-25');
+INSERT INTO Users(UserID, UserName, Pass, Email, DateOfBirth) VALUES (100006, 'DianaRay', 'pass128', 'diana.ray@example.com', '1990-02-12');
+INSERT INTO Users(UserID, UserName, Pass, Email, DateOfBirth) VALUES (100007, 'EvanTodd', 'pass129', 'evan.todd@example.com', '1992-08-05');
+INSERT INTO Users(UserID, UserName, Pass, Email, DateOfBirth) VALUES (100008, 'GraceKim', 'pass130', 'grace.kim@example.com', '1987-04-26');
+INSERT INTO Users(UserID, UserName, Pass, Email, DateOfBirth) VALUES (100009, 'HenryFinn', 'pass131', 'henry.finn@example.com', '1993-09-17');
+INSERT INTO Users(UserID, UserName, Pass, Email, DateOfBirth) VALUES (100010, 'IvyHolt', 'pass132', 'ivy.holt@example.com', '1994-12-24');
+
+
+
+-- Insert 11 hotel records into the Hotels table
+INSERT INTO Hotels(HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200001, 'Grand Plaza', 'New York', 'Luxury hotel in city center', 4.9, '123-456-7890');
+INSERT INTO Hotels(HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200002, 'Sea Breeze Resort', 'California', 'Beachside resort offering great views', 4.5, '234-567-8901');
+INSERT INTO Hotels(HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200003, 'Mountain Retreat', 'Colorado', 'Peaceful retreat in the mountains', 4.6, '345-678-9012');
+INSERT INTO Hotels(HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200004, 'Urban Hotel', 'Chicago', 'Modern amenities and urban feel', 4.2, '456-789-0123');
+INSERT INTO Hotels(HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200005, 'Sunset Villas', 'Florida', 'Beautiful sunset views every evening', 4.8, '567-890-1234');
+INSERT INTO Hotels(HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200006, 'Royal Heritage', 'Boston', 'Experience royal treatment and historical ambiance', 4.7, '678-901-2345');
+INSERT INTO Hotels(HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200007, 'Lakeside Chateau', 'Michigan', 'Charming chateau with lakeside views', 4.5, '789-012-3456');
+INSERT INTO Hotels(HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200008, 'Desert Mirage', 'Nevada', 'Luxury oasis in the middle of the desert', 4.4, '890-123-4567');
+INSERT INTO Hotels(HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200009, 'Forest Lodge', 'Washington', 'Nestled deep within the forest', 4.6, '901-234-5678');
+INSERT INTO Hotels(HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200010, 'Sky High Hotel', 'Seattle', 'Top floors with panoramic city views', 4.3, '012-345-6789');
+INSERT INTO Hotels (HotelID, HotelName, Location, Discription, Rating, ContactInfo) VALUES (200011, 'New Hotel', 'New Location', 'Description of the new hotel', 4.5, '123-456-7890');
+
+
+
+-- Insert 10 room records into the Rooms table
+INSERT INTO Rooms(RoomID, HotelID, RoomType, Price, NumberOfBeds, Availability, MaxOccupancy) VALUES (300001, 200001, 'Standard', 150.00, 2, 'Yes', 2);
+INSERT INTO Rooms(RoomID, HotelID, RoomType, Price, NumberOfBeds, Availability, MaxOccupancy) VALUES (300002, 200001, 'Deluxe', 200.00, 2, 'No', 3);
+INSERT INTO Rooms(RoomID, HotelID, RoomType, Price, NumberOfBeds, Availability, MaxOccupancy) VALUES (300003, 200002, 'Suite', 300.00, 1, 'Yes', 2);
+INSERT INTO Rooms(RoomID, HotelID, RoomType, Price, NumberOfBeds, Availability, MaxOccupancy) VALUES (300004, 200002, 'Standard', 180.00, 2, 'Yes', 4);
+INSERT INTO Rooms(RoomID, HotelID, RoomType, Price, NumberOfBeds, Availability, MaxOccupancy) VALUES (300005, 200003, 'Suite', 350.00, 1, 'No', 2);
+INSERT INTO Rooms(RoomID, HotelID, RoomType, Price, NumberOfBeds, Availability, MaxOccupancy) VALUES (300006, 200003, 'Standard', 150.00, 2, 'Yes', 2);
+INSERT INTO Rooms(RoomID, HotelID, RoomType, Price, NumberOfBeds, Availability, MaxOccupancy) VALUES (300007, 200004, 'Deluxe', 220.00, 2, 'No', 3);
+INSERT INTO Rooms(RoomID, HotelID, RoomType, Price, NumberOfBeds, Availability, MaxOccupancy) VALUES (300008, 200004, 'Standard', 160.00, 2, 'Yes', 4);
+INSERT INTO Rooms(RoomID, HotelID, RoomType, Price, NumberOfBeds, Availability, MaxOccupancy) VALUES (300009, 200005, 'Suite', 320.00, 1, 'No', 2);
+INSERT INTO Rooms(RoomID, HotelID, RoomType, Price, NumberOfBeds, Availability, MaxOccupancy) VALUES (300010, 200005, 'Standard', 140.00, 2, 'Yes', 2);
+
+
+
+-- Insert 10 booking records into the Bookings table
+INSERT INTO Bookings(BookingID, UserID, RoomID, CheckInDate, CheckOutDate, NumberOfGuest, BookingDate, BookingStatus) VALUES (400001, 100001, 300001, '2023-06-15', '2023-06-20', 2, '2023-05-10', 'Confirmed');
+INSERT INTO Bookings(BookingID, UserID, RoomID, CheckInDate, CheckOutDate, NumberOfGuest, BookingDate, BookingStatus) VALUES (400002, 100002, 300003, '2023-07-01', '2023-07-05', 2, '2023-06-01', 'Confirmed');
+INSERT INTO Bookings(BookingID, UserID, RoomID, CheckInDate, CheckOutDate, NumberOfGuest, BookingDate, BookingStatus) VALUES (400003, 100003, 300005, '2023-08-10', '2023-08-15', 1, '2023-07-15', 'Pending');
+INSERT INTO Bookings(BookingID, UserID, RoomID, CheckInDate, CheckOutDate, NumberOfGuest, BookingDate, BookingStatus) VALUES (400004, 100004, 300002, '2023-09-05', '2023-09-10', 3, '2023-08-20', 'Cancelled');
+INSERT INTO Bookings(BookingID, UserID, RoomID, CheckInDate, CheckOutDate, NumberOfGuest, BookingDate, BookingStatus) VALUES (400005, 100005, 300004, '2023-10-15', '2023-10-20', 4, '2023-09-10', 'Confirmed');
+INSERT INTO Bookings(BookingID, UserID, RoomID, CheckInDate, CheckOutDate, NumberOfGuest, BookingDate, BookingStatus) VALUES (400006, 100006, 300006, '2023-11-01', '2023-11-05', 2, '2023-10-01', 'Confirmed');
+INSERT INTO Bookings(BookingID, UserID, RoomID, CheckInDate, CheckOutDate, NumberOfGuest, BookingDate, BookingStatus) VALUES (400007, 100007, 300008, '2023-12-10', '2023-12-15', 4, '2023-11-10', 'Pending');
+INSERT INTO Bookings(BookingID, UserID, RoomID, CheckInDate, CheckOutDate, NumberOfGuest, BookingDate, BookingStatus) VALUES (400008, 100008, 300010, '2024-01-05', '2024-01-10', 2, '2023-12-20', 'Cancelled');
+INSERT INTO Bookings(BookingID, UserID, RoomID, CheckInDate, CheckOutDate, NumberOfGuest, BookingDate, BookingStatus) VALUES (400009, 100009, 300007, '2024-02-15', '2024-02-20', 3, '2024-01-15', 'Confirmed');
+INSERT INTO Bookings(BookingID, UserID, RoomID, CheckInDate, CheckOutDate, NumberOfGuest, BookingDate, BookingStatus) VALUES (400010, 100010, 300009, '2024-03-01', '2024-03-05', 1, '2024-02-01', 'Pending');
+
+
+
+-- Insert 10 payment records into the Payments table
+INSERT INTO Payments(PaymentID, BookingID, Amount, PaymentDate, PaymentMethod, PaymentStatus) VALUES (500001, 400001, 750.00, '2023-05-10', 'Credit Card', 'Completed');
+INSERT INTO Payments(PaymentID, BookingID, Amount, PaymentDate, PaymentMethod, PaymentStatus) VALUES (500002, 400002, 1200.00, '2023-06-01', 'Debit Card', 'Completed');
+INSERT INTO Payments(PaymentID, BookingID, Amount, PaymentDate, PaymentMethod, PaymentStatus) VALUES (500003, 400003, 1750.00, '2023-07-15', 'PayPal', 'Pending');
+INSERT INTO Payments(PaymentID, BookingID, Amount, PaymentDate, PaymentMethod, PaymentStatus) VALUES (500004, 400004, 1000.00, '2023-08-20', 'Credit Card', 'Refunded');
+INSERT INTO Payments(PaymentID, BookingID, Amount, PaymentDate, PaymentMethod, PaymentStatus) VALUES (500005, 400005, 720.00, '2023-09-10', 'Credit Card', 'Completed');
+INSERT INTO Payments(PaymentID, BookingID, Amount, PaymentDate, PaymentMethod, PaymentStatus) VALUES (500006, 400006, 300.00, '2023-10-01', 'Debit Card', 'Completed');
+INSERT INTO Payments(PaymentID, BookingID, Amount, PaymentDate, PaymentMethod, PaymentStatus) VALUES (500007, 400007, 640.00, '2023-11-10', 'PayPal', 'Pending');
+INSERT INTO Payments(PaymentID, BookingID, Amount, PaymentDate, PaymentMethod, PaymentStatus) VALUES (500008, 400008, 280.00, '2023-12-20', 'Credit Card', 'Refunded');
+INSERT INTO Payments(PaymentID, BookingID, Amount, PaymentDate, PaymentMethod, PaymentStatus) VALUES (500009, 400009, 660.00, '2024-01-15', 'Debit Card', 'Completed');
+INSERT INTO Payments(PaymentID, BookingID, Amount, PaymentDate, PaymentMethod, PaymentStatus) VALUES (500010, 400010, 1600.00, '2024-02-01', 'Credit Card', 'Pending');
+
+
+
+
+
+-- Insert 10 review records into the Reviews table
+INSERT INTO Reviews(ReviewID, HotelID, UserID, Rating, Feedback) VALUES (600001, 200001, 100001, 5, 'Outstanding service and location!');
+INSERT INTO Reviews(ReviewID, HotelID, UserID, Rating, Feedback) VALUES (600002, 200002, 100002, 4, 'Great views but room could be cleaner.');
+INSERT INTO Reviews(ReviewID, HotelID, UserID, Rating, Feedback) VALUES (600003, 200003, 100003, 5, 'Perfect for a mountain getaway!');
+INSERT INTO Reviews(ReviewID, HotelID, UserID, Rating, Feedback) VALUES (600004, 200004, 100004, 3, 'Decent place but noisy at night.');
+INSERT INTO Reviews(ReviewID, HotelID, UserID, Rating, Feedback) VALUES (600005, 200005, 100005, 4, 'Loved the sunsets, will come back!');
+INSERT INTO Reviews(ReviewID, HotelID, UserID, Rating, Feedback) VALUES (600006, 200006, 100006, 5, 'Truly a royal experience!');
+INSERT INTO Reviews(ReviewID, HotelID, UserID, Rating, Feedback) VALUES (600007, 200007, 100007, 4, 'Good service but expensive.');
+INSERT INTO Reviews(ReviewID, HotelID, UserID, Rating, Feedback) VALUES (600008, 200008, 100008, 3, 'Unique but too remote.');
+INSERT INTO Reviews(ReviewID, HotelID, UserID, Rating, Feedback) VALUES (600009, 200009, 100009, 5, 'Quiet and peaceful, just what I needed.');
+INSERT INTO Reviews(ReviewID, HotelID, UserID, Rating, Feedback) VALUES (600010, 200010, 100010, 4, 'Great location but average food.');
+
+
+-- Querying the database
+
+
+
+
+
+-- Query 1: Get all users
+SELECT * FROM Users;
+
+
+
+
+
+-- Query 2: Get all hotels
+SELECT * FROM Hotels;
+
+
+
+
+
+-- Query 3: Get all rooms
+SELECT * FROM Rooms;
+
+
+
+
+
+-- Query 4: Get all bookings
+SELECT * FROM Bookings;
+
+
+
+
+-- Query 5: Get all payments
+SELECT * FROM Payments;
+
+
+
+
+-- Query 6: Get all reviews
+SELECT * FROM Reviews;
+
+
+
+
+-- Query 7:Find users with a specific name (e.g. containing 'Smith')
+SELECT * FROM Users WHERE UserName LIKE '%Smith%';
+
+
+
+
+-- Query 8: Get all bookings that are unpaid
+SELECT * FROM Bookings WHERE BookingStatus = 'Unpaid';
+
+
+
+
+-- Query 9: Update hotel name based on HotelID 
+UPDATE Hotels 
+SET HotelName = 'Rana Plaza' 
+WHERE HotelID = 200001;
+
+
+
+
+-- Query 10: Delete a record from the Hotels table based on HotelID
+DELETE FROM Hotels WHERE HotelID = 200011;
+
+
+
+
+-- Query 11: Use of union, intersect, and except
+
+-Retrieve hotel names starting with 'E' or containing 'M'
+SELECT HotelName FROM Hotels WHERE HotelName LIKE 'E%' UNION SELECT HotelName FROM Hotels WHERE HotelName LIKE '%M%';
+
+-Retrieve hotel names starting with 'E' and containing 'M'
+SELECT HotelName FROM Hotels WHERE HotelName LIKE 'E%' INTERSECT SELECT HotelName FROM Hotels WHERE HotelName LIKE '%M%';
+
+-Retrieve hotel names starting with 'E' but not containing 'M'
+SELECT HotelName FROM Hotels WHERE HotelName LIKE 'E%' EXCEPT SELECT HotelName FROM Hotels WHERE HotelName LIKE '%M%';
+
+
+-- Query 12: Find rooms with the maximum number of beds 
+WITH MaxBeds AS (SELECT MAX(NumberOfBeds) AS MaxNumberOfBeds FROM Rooms)
+SELECT * FROM Rooms WHERE NumberOfBeds = (SELECT MaxNumberOfBeds FROM MaxBeds);
+
+
+
+
+-- Query 13: Find Average, Minimum, and Maximum Ratings from Reviews (using Aggregate function)
+SELECT AVG(Rating) AS AverageRating, MIN(Rating) AS MinRating, MAX(Rating) AS MaxRating
+FROM Reviews;
+
+
+
+
+-- Query 14: Find Room Types with Average Number of Beds Greater Than a Certain Number in a Specific Hotel
+SELECT RoomType, AVG(NumberOfBeds) AS AverageBeds FROM Rooms WHERE HotelID = 200001 GROUP BY RoomType HAVING AVG(NumberOfBeds) > 2;
+
+
+
+
+-- Query 15: use of Set Membership(AND, OR,NOT)
+ 
+-Retrieve all details about hotels located in "New York" that have "Deluxe" rooms available
+SELECT * FROM Hotels WHERE Location = 'New York' AND HotelID IN (SELECT HotelID FROM Rooms WHERE RoomType = 'Deluxe' AND Availability = 'Yes');
+
+-Retrieve all rooms that are priced above $300 or can accommodate more than 3 people
+SELECT * FROM Rooms WHERE Price > 300 OR MaxOccupancy > 3;
+
+-Find Bookings Made by Users Not From 'alice.jones@example.com' Domain
+SELECT * FROM Bookings WHERE UserID NOT IN (SELECT UserID FROM Users WHERE Email LIKE '%alice.jones@example.com');
+
+
+-- Query 16: Find List of Users Who Booked Suites in Highly Rated Hotels
+SELECT UserName FROM Users WHERE UserID IN (SELECT UserID FROM Bookings WHERE RoomID IN (SELECT RoomID FROM Rooms WHERE HotelID IN (SELECT HotelID FROM Hotels WHERE Rating > 4.5) AND RoomType = 'Suite'));
+
+
+
+-- Query 17: Use of some,all,exists and not exists
+
+-Retrieve bookings with a number of guests greater than some bookings
+SELECT * FROM Bookings WHERE NumberOfGuest > SOME (SELECT NumberOfGuest FROM Bookings);
+
+-Retrieve bookings with a number of guests greater than all bookings
+SELECT * FROM Bookings WHERE NumberOfGuest > ALL (SELECT NumberOfGuest FROM Bookings);
+
+-Retrieve bookings with a specific RoomID that exists in the Rooms table
+SELECT * FROM Bookings b WHERE EXISTS (SELECT 1 FROM Rooms r WHERE r.RoomID = b.RoomID);
+
+-Retrieve Users with no confirmed bookings
+SELECT UserID, UserName, Email FROM Users WHERE NOT EXISTS (SELECT 1 FROM Bookings WHERE Users.UserID = Bookings.UserID AND Bookings.BookingStatus = 'Confirmed');
+
+
+
+
+-- Query 18: Retrieve bookings for a specific year
+SELECT * FROM Bookings WHERE CheckInDate LIKE '%2024% ;
+
+
+
+
+-- Query 19: Retrieve bookings along with corresponding user information
+SELECT B.*, U.UserName, U.Email FROM Bookings B JOIN Users U ON B.UserID = U.UserID;
+
+
+
+
+-- Query 20: Using VIEW for Unpaid Bookings
+DROP VIEW IF EXISTS UnpaidBookingsView;
+CREATE VIEW UnpaidBookingsView AS 
+SELECT * FROM Bookings WHERE BookingStatus = 'Unpaid';
+
+SELECT * FROM UnpaidBookingsView;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

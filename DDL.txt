@@ -1,0 +1,94 @@
+
+
+drop table Reviews;
+drop table Payments;
+drop table Bookings;
+drop table Rooms;
+drop table Hotels;
+drop table Users;
+
+CREATE TABLE Users (
+    UserID number(6) PRIMARY KEY,
+    UserName VARCHAR(50),
+    Pass VARCHAR(50) ,
+    Email VARCHAR(100) ,
+    DateOfBirth varchar(30)
+);
+
+CREATE TABLE Hotels (
+    HotelID number(6) PRIMARY KEY,
+    HotelName VARCHAR(50),
+    Location VARCHAR(50) ,
+    Discription VARCHAR(100) ,
+    Rating number(2,1),
+    ContactInfo varchar(30)
+    
+);
+
+CREATE TABLE Rooms (
+    RoomID number(6) PRIMARY KEY,
+    HotelID number(6),
+    RoomType VARCHAR(50) ,
+    Price number(10,2),
+    NumberOfBeds number(6),
+    Availability VARCHAR(10) ,
+    MaxOccupancy number(6),
+    FOREIGN KEY (HotelID) REFERENCES Hotels(HotelID)
+    
+);
+
+CREATE TABLE Bookings (
+    BookingID number(6) PRIMARY KEY,
+    UserID number(6) ,
+    RoomID number(6),
+    CheckInDate VARCHAR(50),
+    CheckOutDate VARCHAR(50) ,
+    NumberOfGuest number(6),
+    BookingDate VARCHAR(10) ,
+    BookingStatus VARCHAR(10) ,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID)
+    
+);
+
+CREATE TABLE Payments (
+    PaymentID number(6) PRIMARY KEY,
+    BookingID number(6),
+    Amount number(10,2),
+    PaymentDate VARCHAR(50) ,
+    PaymentMethod VARCHAR(50) ,
+    PaymentStatus VARCHAR(50) ,
+    FOREIGN KEY (BookingID) REFERENCES Bookings(BookingID)
+    
+);
+
+
+CREATE TABLE Reviews (
+    ReviewID number(6) PRIMARY KEY,
+    HotelID number(6),
+    UserID number(6),
+    Rating number(6) ,
+    Feedback VARCHAR(50) ,
+    FOREIGN KEY (HotelID) REFERENCES Hotels(HotelID),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+    
+);
+
+--adding a column in Rooms
+
+ALTER TABLE Rooms ADD extracolumn NUMBER(5);
+
+
+--changing the datatype of a column in Rooms
+
+ALTER TABLE Rooms MODIFY extracolumn varchar(10);
+
+--changing the name of a column in Rooms
+ALTER TABLE Rooms RENAME COLUMN extracolumn TO extracolumn1;
+
+--deleting a column in Rooms
+
+ALTER TABLE Rooms DROP COLUMN extracolumn1;
+
+
+
